@@ -34,9 +34,7 @@ cancelBtn.onclick = function(){
   scrollBtn.style.pointerEvents = "auto";
 }
 
-// Side Navigation Bar Close While We Click On Navigation Links 
-//move to up button//
-
+// Side Navigation Bar Close While We Click On Navigation Links
 let navLinks = document.querySelectorAll(".menu li a");
 for (var i = 0; i < navLinks.length; i++) {
   navLinks[i].addEventListener("click" , function() {
@@ -45,45 +43,3 @@ for (var i = 0; i < navLinks.length; i++) {
     menuBtn.style.pointerEvents = "auto";
   });
 }
-let calcScrollValue = () => {
-  let scrollProgress = document.getElementById("progress");
-  let progressValue = document.getElementById("progress-value");
-  let pos = document.documentElement.scrollTop;
-  let calcHeight =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
-  let scrollValue = Math.round((pos * 100) / calcHeight);
-  if (pos > 100) {
-    scrollProgress.style.display = "grid";
-  } else {
-    scrollProgress.style.display = "none";
-  }
-  scrollProgress.addEventListener("click", () => {
-    document.documentElement.scrollTop = 0;
-  });
-  scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
-};
-
-window.onscroll = calcScrollValue;
-window.onload = calcScrollValue;
-
-//importing db//
-import { sql } from "@vercel/postgres";
-
-export default async function Cart({ params }) {
-  const { rows } = await sql`SELECT * from CARTS where user_id=${params.user}`;
-
-  return (
-    <div>
-      {rows.map((row) => (
-        <div key={row.id}>
-          {row.id} - {row.quantity}
-        </div>
-      ))}
-    </div>
-  );
-}
-
-
-
-
