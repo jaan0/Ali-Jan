@@ -1,247 +1,278 @@
 <!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
 <html lang="en" dir="ltr">
-
-<head>   
-    <link rel="stylesheet" href="style.css"/>
-
-
-    <meta http-equiv="Cache-Control" content="max-age=200" />
-    <meta charset="UTF-8"/>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Portfolio Website HTML CSS| CodingNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-</head>
-
-<body>
-    <link rel="icon" sizes="50x50" href="Portfolio.png">
+  </head>
+  <body>
     <!-- Move to up button -->
-    <div id="progress">
-        <span id="progress-value">&#x1F815;</span>
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
     </div>
     <!-- navgaition menu -->
-
     <nav>
-        <div class="navbar">
-            <div class="logo"><a href="#">Portfolio.</a></div>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <div class="cancel-btn">
-                    <i class="fas fa-times"></i>
-                </div>
-            </ul>
-            <div class="media-icons">
-                <a href="https://www.facebook.com/profile.php?id=100027508175775&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
-            </div>
+      <div class="navbar">
+        <div class="logo"><a href="#">Ali Jan.</a></div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#project">Projects</a>
+          <li><a href="#contact">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+        <div class="media-icons">
+          <a href="https://www.linkedin.com/in/ali-jan-138b18230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/jaan0"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/a.l.i._.j.a.a.n/"><i class="fab fa-instagram"></i></a>
         </div>
-        <div class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
     </nav>
+
     <!-- Home Section Start -->
     <section class="home" id="home">
-        <div class="home-content">
-            <div class="text">
-                <div class="left">
-                    <div class="text-one">Hello,</div>
-                    <div class="text-two">I'm Ali Jan</div>
-                    <div class="text-three">Website Developer</div>
-                    <div class="text-four">From Pakistan</div>
-                </div>
-                <div class="button">
-                    <a href="#"><button>Hire Me</button></a>
-                </div>
-            </div>
-
-            <div class="right">
-                <img src="new.jpg" alt="" />
-            </div>
+      <div class="home-content">
+        <div class="text">
+          <div class="text-one">Hello,</div>
+          <div class="text-two">I'm Ali Jan</div>
+          <div class="text-three">Web Developer</div>
+          <!-- <div class="text-four">From Nepal</div> -->
         </div>
+        <div class="button">
+          <button>
+          <a href="mailto:ali.mahesar04@gmail.com">Hire Me</a>
+          </button>
+        </div>
+      </div>
     </section>
 
     <!-- About Section Start -->
     <section class="about" id="about">
-        <div class="content">
-            <div class="title"><span>About Me</span></div>
-            <div class="about-details">
-                <div class="left">
-                    <img src="me2.jpg" alt="" />
-                </div>
-                <div class="right">
-                    <div class="topic">Website Developing Is My Passion</div>
-                    <p>
-                        I am pursunig my bachelors in Computer Science from IQRA UNIVERSITY. I'm also student of <span
-                            style="color: gold;"><a href="https://aptech-education.com.pk/locateus.html?cid=2043">APTECH
-                                LEARNING PAKISTAN</a></span> based in Karachi and doing my Diploma in<span
-                            style="color:crimson">Website Devlopment</span>
-                    </p>
-                    <div class="button">
-                        <button><a href="/Ali Jan (1).pdf">Download CV</a></button>
-                    </div>
-                </div>
+      <div class="content">
+        <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="about.jpg" alt="" />
+          </div>
+          <div class="right">
+            <div class="topic">Designing Is My Passion</div>
+            <p>
+              I am pursuing my bachelors in Computer Science from IQRA UNIVERSITY. I have recently
+              completed my Diploma in Web Development from <a href="https://aptech-education.com.pk/#/centre?id=04250060-ac36-44a5-bfe4-08db9f09cf7c" style="color:#4070f4;">Aptech Pakistan</a>  
+            </p>
+            <div class="button" >
+              <button>
+              <a href="/Ali Jan (1).pdf" style="color:#293241;">View My CV</a>
+            </button>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- My Skill Section Start -->
     <!-- Section Tag and Other Div will same where we need to put same CSS -->
     <section class="skills" id="skills">
-        <div class="content">
-            <div class="title"><span>My Skills</span></div>
-            <div class="skills-details">
-                <div class="text">
-                    <div class="topic">Skills Reflects Our Knowledge</div>
-                    <p>I have a very good grip on <span style="color: royalblue;">HTML & css</span> and also i m working
-                        on my PHP AND JAVA SCRIPT which will also help me to develop more Websites more effeciently.
-                    </p>
-                    <div class="experience">
-                        <div class="num">1</div>
-                        <div class="exp">
-                            Years Of <br />
-                            Experience
-                        </div>
-                    </div>
-                </div>
-                <div class="boxes">
-                    <div class="box">
-                        <div class="topic">HTML</div>
-                        <div class="per">90%</div>
-                    </div>
-                    <div class="box">
-                        <div class="topic">CSS</div>
-                        <div class="per">80%</div>
-                    </div>
-                    <div class="box">
-                        <div class="topic">JavScript</div>
-                        <div class="per">40%</div>
-                    </div>
-                    <div class="box">
-                        <div class="topic">PHP</div>
-                        <div class="per">40%</div>
-                    </div>
-                </div>
+      <div class="content">
+        <div class="title"><span>My Skills</span></div>
+        <div class="skills-details">
+          <div class="text">
+            <div class="topic">Skills Reflects Our Knowledge</div>
+          <p>I have a very good grip on <span style="color: royalblue;">HTML & css</span> and also i m working
+            on my PHP AND JAVA SCRIPT which will also help me to develop more Websites more effeciently.
+          </p>
+            <div class="experience">
+              <div class="num">1.5</div>
+              <div class="exp">
+                Years Of <br />
+                Experience
+              </div>
             </div>
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <div class="topic">HTML</div>
+              <div class="per">90%</div>
+            </div>
+            <div class="box">
+              <div class="topic">CSS</div>
+              <div class="per">80%</div>
+            </div>
+            <div class="box">
+              <div class="topic">JavScript</div>
+              <div class="per">70%</div>
+            </div>
+            <div class="box">
+              <div class="topic">PHP</div>
+              <div class="per">60%</div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- My Services Section Start -->
     <section class="services" id="services">
-        <div class="content">
-            <div class="title"><span>My Services</span></div>
-            <div class="boxes">
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-desktop"></i>
-                    </div>
-                    <div class="topic">Web Development</div>
-                    <p>I have done my Diploma Website Development from <a href="https://aptechcourses.com/">Aptech North
-                            Nazimabad Karachi</a></p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <div class="topic">Graphic Design</div>
-                    <p>I m Also a graphic designer i have done my graphic designing from my self and i can help u with
-                        it.</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="topic">Digital Marketing</div>
-                    <p>I was an intern of digital marketing at an reputed company for 6 months and also i was an junior
-                        digital marketer there also.</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fab fa-android"></i>
-                    </div>
-                    <div class="topic">Icon Design</div>
-                    <p>I have a lil bit Knowledge of icon design but i can make good icon. </p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-camera-retro"></i>
-                    </div>
-                    <div class="topic">Photography</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui
-                        voluptatem eligendi?</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-tablet-alt"></i>
-                    </div>
-                    <div class="topic">Apps Devlopment</div>
-                    <p>I am learning app Development from <a href="https://wwww.aptechcourses.com/">Aptech North
-                            Nazimabad Karachi</a></p>
-                </div>
+      <div class="content">
+        <div class="title"><span>My Services</span></div>
+        <div class="boxes">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-desktop"></i>
             </div>
+            <div class="topic">Web Devlopment</div>
+            <p>I'm passionate about translating ideas into robust and user-friendly web applications. I leverage my expertise in
+            cutting-edge technologies to create dynamic and secure online experiences.</p>
+          </div>
+          <!-- <!-- <div class="box">
+            <div class="icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="topic">Graphic Design</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="topic">Digital Marketing</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fab fa-android"></i>
+            </div>
+            <div class="topic">Icon Design</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+          </div> -->
+           <div class="box">
+            <div class="icon">
+              <i class="fas fa-camera-retro"></i>
+            </div>
+            <div class="topic">Web Designing</div>
+            <p>I believe in creating websites that are not only visually stunning but also strategically crafted to achieve your goals.
+            Whether it's converting visitors into customers or telling your brand story in a captivating way, I can help you build a
+            website that truly stands out.</p>
+          </div> 
+          <!--<div class="box">
+            <div class="icon">
+              <i class="fas fa-tablet-alt"></i>
+            </div>
+            <div class="topic">Apps Devlopment</div>
+            <p>I am learning app Development from <a href="https://wwww.aptechcourses.com/">Aptech North
+                Nazimabad Karachi</a></p>
+          </div>
         </div>
+      </div>-->
     </section>
-    <!--Projects done by me! -->
-    <section class="projects" id="projects">
-        <div class="content">
-            <div class="title"><span>My Projects</span></div>
-            <div class="box">
-            </div>
-            <section class="services" id="services">
-                <div class="content">
-                    <div class="boxes">
-                        <div class="box">
-                            <div class="icon">
-                                <i class="fas fa-paint-brush"></i>
-                            </div>
-                            <div class="topic">Starbucks Clone</div>
-                            <p>I have recently make a clone of Starbucks <a
-                                    href="https://starbucks-clone-xi.vercel.app/">Click here to know more.</a> </p>
-                        </div>
 
-                        <div class="box">
-                            <div class="icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="topic">Restaurant Web</div>
-                            <p>I have recently made a Website for a resturant <a
-                                    href="https://resturant-web-xi.vercel.app/">Click here to know more.</a></p>
-                        </div>
 
-                    </div>
+  <!-- My Project Section Started-->
+    <section class="project" id="project">
+      <div class="content">
+        <div class="title"><span>My Projects</span></div>
+        <div class="boxes">
+          <div class="box">
+            <!-- <div class="icon">
+              <i class="fas fa-desktop"></i> 
+            </div>  -->
+            <div class="topic">Starbucks Clone</div>
+            <p>I have recently make a clone of Starbucks <a href="https://starbucks-clone-xi.vercel.app/">Click here to know
+                more.</a> </p>
+          </div>
+          <!-- <!-- <div class="box">
+                <div class="icon">
+                  <i class="fas fa-paint-brush"></i>
                 </div>
-            </section>
+                <div class="topic">Graphic Design</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="topic">Digital Marketing</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <i class="fab fa-android"></i>
+                </div>
+                <div class="topic">Icon Design</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?</p>
+              </div> -->
+          <!-- <div class="box">
+            <div class="icon">
+              <i class="fas fa-camera-retro"></i>
+            </div>
+            <div class="topic">Web Designing</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia autem quam odio, qui voluptatem eligendi?
+            </p>
+          </div> -->
+          <div class="box">
+            <!-- <div class="icon">
+              <i class="fas fa-tablet-alt"></i>
+            </div> -->
+            <div class="topic">Restaurant Web</div>
+            <p>I have recently made a Website for a resturant <a href="https://resturant-web-xi.vercel.app/">Click here to know
+                more.</a></p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Me section Start -->
     <section class="contact" id="contact">
-        <div class="content">
-            <div class="title"><span>Contact Me</span></div>
-            <div class="text">
-                <div class="topic">Have Any Project?</div>
-                <p><b>Feel Free To Contact Me.</b></p>
-                <div class="button">
-                    <button><a href="https://forms.visme.co/formsPlayer/z4r3gpqv-contact-me">Let's Chat</a></button>
-                </div>
-            </div>
+      <div class="content">
+        <div class="title"><span>Contact Me</span></div>
+        <div class="text">
+          <div class="topic">Have Any Project?</div>
+          <p><b>Feel Free To Contact Me.</b></p>
+          <div class="button">
+            <button><a href="https://forms.visme.co/formsPlayer/z4r3gpqv-contact-me" style="color:#293241;">Let's Chat</a></button>
+          </div>
         </div>
+      </div> 
+      <!-- <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form>
+          <div class="input-group">
+            <label class="label">Name</label>
+            <input type="text" class="input" name="text" required>
+          </div>
+          <div class="input-group">
+            <label class="label">Email</label>
+            <input type="email" class="input" name="email" required>
+          </div>
+          <div class="input-group">
+            <label class="label">Message</label>
+            <textarea  class="message" name="message" required></textarea>
+          </div>
+          <div class="button">
+          <button>Submit</button>
+        </div>
+        </form>
+      </div> -->
     </section>
 
     <!-- Footer Section Start -->
     <footer>
-        <div class="text">
-            <span>Created By <a href="#">Ali Jan</a> | &#169; 2024 All Rights Reserved</span>
-        </div>
+      <div class="text">
+        <span>Created By <a href="https://github.com/jaan0">Ali Jan</a> | &#169; 2021 All Rights Reserved</span>
+      </div>
     </footer>
-    <script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
-<script src="script.js"></script>    
-</body>
-</html>
 
+    <script src="script.js"></script>
+  </body>
+</html>
